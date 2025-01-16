@@ -1,9 +1,13 @@
 import smtplib
+import os
+from dotenv import load_dotenv
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-sender_email = "goyaldanish542@gmail.com"
-password = "kwfy lhga medv gpqs"
+load_dotenv()
+
+sender_email = os.getenv('EMAIL_LOGIN')
+password = os.getenv('EMAIL_PASS')
 
 server = "smtp.gmail.com"
 smtp_port = 587

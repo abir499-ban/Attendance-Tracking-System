@@ -9,7 +9,7 @@ server = "smtp.gmail.com"
 smtp_port = 587
 
 
-def SendMail(email, emailBodyMessage, warning=False, subject):
+def SendMail(email, emailBodyMessage, warning=False):
     subject = 'Maximum Absentee has been limit to be reached' if not warning else 'Warning for reaching maximum attendance limit'
 
 
